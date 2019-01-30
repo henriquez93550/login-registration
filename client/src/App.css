@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+}
+.card {
+  background-color: gray;
+  border: 1rem;
+  border-color: lightslategray;
+}
+.btn {
+  background-color: darkslategray;
+  color: #F0F0F0;
+} 
+i, p, b, h4 {
+  color: #F0F0F0;
+}
+label {
+  color: #808080;
+  margin-left: 5px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;
+  
+}
+
+.form-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+  
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
