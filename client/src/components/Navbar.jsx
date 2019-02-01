@@ -12,7 +12,7 @@ class Navbar extends Component {
               <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="container">
+              <div>
                 <Link className="navbar-brand title" to="/">Web Dev Point</Link>
                 <Link className="navbar-brand text" to="/">HTML</Link>
                 <Link className="navbar-brand text" to="/">CSS</Link>

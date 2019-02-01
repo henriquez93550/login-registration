@@ -1,7 +1,15 @@
 .jumbotron {
-  background-image: url(../images/city-streets.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: white;
 }
+#background-video{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  top: 0;
+  padding: none;
+  position: relative; 
+  }
