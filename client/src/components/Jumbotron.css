@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: white;
+  height: 50vh;
+	margin-bottom: 2px;
 }
 #background-video{
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: left;
   top: 0;
   padding: none;
   position: relative; 
