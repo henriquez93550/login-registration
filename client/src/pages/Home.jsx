@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
-import Cards from "../components/Cards.jsx";
+import IconRow from "../components/IconRow";
 import Homeheader from "../components/Homeheader.jsx";
 
 class Home extends Component {
@@ -15,17 +15,23 @@ class Home extends Component {
               position: "absolute",
               top: 50,
               zIndex: 100,
-              color: "white",
+              color: "yellow",
               width: "100%"
             }}
           >
             <div className="container">
               <div className="row">
                 <div className="mx-auto">
-                  <h1>Hi there, this is a header over the video.</h1>
+                  <h1
+                    style={{
+                      fontFamily: "Permanent Marker"
+                    }}
+                  >
+                    Web Dev Point
+                  </h1>
                   <p>
-                    And this is some body text... yada yada yada.... Okay, yeah,
-                    man !!!!!
+                    Learn to design, build and deploy professional websites
+                    using HTML, CSS, JavaScript, Node, MongoDB, and React!
                   </p>
                 </div>
               </div>
@@ -36,40 +42,19 @@ class Home extends Component {
         <div className="container">
           <h2>Welcome</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            placerat orci eu nulla sagittis, pulvinar dignissim lectus
-            consequat. Etiam in lobortis ligula, vitae ornare lacus. Vivamus
-            scelerisque lorem arcu, vitae eleifend ex commodo a. Quisque rutrum,
-            augue sit amet egestas efficitur, magna nulla lacinia elit, sed
-            suscipit tortor erat vitae enim. Donec egestas odio id aliquet
-            rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia Curae; Quisque mi dolor, egestas nec
-            lacinia non, sodales eu lacus. Donec ultricies nec elit ac ornare.
-            Quisque fermentum ligula ut feugiat cursus. Aliquam auctor suscipit
-            ex a lacinia. Mauris sollicitudin, justo quis fringilla finibus, dui
-            diam ullamcorper nulla, sit amet placerat justo neque quis quam.
-            Praesent nec nibh at tortor ornare dignissim. Morbi tincidunt
-            fringilla turpis at luctus. Vivamus dapibus ligula eget pellentesque
-            luctus. Maecenas ut consectetur lacus, non dignissim nisi. Praesent
-            sodales tellus sit amet faucibus tempus.
-          </p>
-          <p>
-            Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida
-            urna, at pretium dui turpis non lorem. Donec pretium lorem ipsum, at
-            fermentum nibh consequat facilisis. Sed maximus massa est, vel porta
-            diam placerat id. Vivamus imperdiet lorem eget dolor bibendum, eget
-            gravida tellus interdum. Sed lectus odio, condimentum eu porttitor
-            vel, euismod sit amet urna. Nam quis dui a nibh rhoncus aliquam
-            vitae in metus. Nam sit amet semper turpis. Suspendisse eu malesuada
-            tortor, vel lacinia nisl. Phasellus ultrices vehicula magna, sed
-            tempor neque dapibus quis. Phasellus urna justo, sollicitudin ac
-            odio eget, convallis varius nulla. Vivamus in lacinia lorem, at
-            eleifend nulla. Nulla nec luctus purus. Integer id purus mauris.
-            Phasellus finibus ultricies erat a tempus. Nulla luctus sem nec
-            justo venenatis, eu faucibus purus congue.
+            Learn to code, gain a new skill, get a new job, improve your life
+            for you and your family. Whatever your goal we will help you get
+            there. This website was created by coding bootcamp students who
+            embarked in a mission to learn how to code. This collection of
+            information include tools that helped us along our journey. I hope
+            this guide to web development will change your lives just as it did
+            ours. You too can teach yourself how to code and with a little
+            guidance and hard work youll be writing full stack applications
+            bringing you one step closer to achieving your dreams.
           </p>
         </div>
-        <Cards />
+        <IconRow />
+        <br />
         <Footer />
       </div>
     );
