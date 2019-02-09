@@ -31,8 +31,8 @@ class Navbar extends Component {
           <Link className="navbar-brand text" to="/javascript">
             JAVASCRIPT
           </Link>
-          <Link className="navbar-brand text" to="/bootstrap">
-            BOOTSTRAP
+          <Link className="navbar-brand text" to="/mongo">
+            MongoDB
           </Link>
           <Link className="navbar-brand text" to="/node">
             NODE.JS

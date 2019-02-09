@@ -20,7 +20,7 @@ class Dashboard extends Component {
               <b>Hi,</b> {user.name.split(" ")[0]}
               <p className="mx-auto">
                 You are succesfully logged in to the{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+                <span style={{ fontFamily: "monospace" }}>Forums</span>
               </p>
             </h4>
             <button

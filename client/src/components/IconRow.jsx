@@ -17,7 +17,7 @@ class IconRow extends Component {
                     <br />
                     <h4>HTML 5</h4>
                     <p>
-                      Learn the basics of HTML5 and start building and edition
+                      Learn the basics of HTML5 and start building and editing
                       web pages.
                     </p>
                   </div>
@@ -45,7 +45,7 @@ class IconRow extends Component {
                     <br />
                     <h4>Node.Js</h4>
                     <p>
-                      Build back-end applications using the popular server side
+                      Build back-end applications using this popular server side
                       JavaScript platform.
                     </p>
                   </div>
@@ -55,7 +55,7 @@ class IconRow extends Component {
                     <h4>MongoDB</h4>
                     <p>
                       Build a database using one of the most widely used NoSQL
-                      database.
+                      databases.
                     </p>
                   </div>
                   <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
