@@ -21,7 +21,11 @@ class Dashboard extends Component {
               <span className="mx-auto">
                 {" "}
                 you are succesfully logged in to the{" "}
-                <span style={{ fontFamily: "monospace" }}>Forums</span>
+                <span
+                  style={{ fontFamily: "Permanent Marker", color: "yellow" }}
+                >
+                  Forums
+                </span>
               </span>
             </h4>
             <button

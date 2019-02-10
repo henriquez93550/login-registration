@@ -40,3 +40,8 @@ form {
   display: flex;
   flex-wrap: wrap;
 }
+ul,
+li {
+  list-style-type: none;
+  color: #f0f0f0;
+}

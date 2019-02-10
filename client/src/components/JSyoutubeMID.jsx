@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import YouTube from "react-youtube";
 
-class HTMLyoutubeMID extends React.Component {
+class JSyoutubeMID extends Component {
   render() {
     const opts = {
       height: "390",
@@ -13,7 +13,7 @@ class HTMLyoutubeMID extends React.Component {
     };
 
     return (
-      <YouTube videoId="qoSksQ4s_hg&t=2s" opts={opts} onReady={this._onReady} />
+      <YouTube videoId="0ik6X4DJKCc" opts={opts} onReady={this._onReady} />
     );
   }
 
@@ -23,4 +23,4 @@ class HTMLyoutubeMID extends React.Component {
   }
 }
 
-export default HTMLyoutubeMID;
+export default JSyoutubeMID;

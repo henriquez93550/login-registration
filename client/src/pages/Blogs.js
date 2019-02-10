@@ -5,7 +5,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, TextArea } from "../components/Form";
 import Dashboard from "../components/dashboard/Dashboard";
 
 class Blogs extends Component {
@@ -68,7 +68,7 @@ class Blogs extends Component {
             <Jumbotrons>
               <h1>Post Your Question Here</h1>
             </Jumbotrons>
-            <form>
+            <form className="form-wrapper mt-2">
               <Input
                 value={this.state.topic}
                 onChange={this.handleInputChange}
@@ -87,12 +87,19 @@ class Blogs extends Component {
                 name="synopsis"
                 placeholder="Synopsis (required)"
               />
-              <FormBtn
+              <button
+                style={{
+                  width: "180px",
+                  borderRadius: "30px",
+                  letterSpacing: "1.5px",
+                  marginTop: "1rem"
+                }}
                 disabled={!(this.state.author && this.state.topic)}
                 onClick={this.handleFormSubmit}
+                className="btn btn-warning btn-block"
               >
                 Submit Question
-              </FormBtn>
+              </button>
             </form>
           </Col>
 
@@ -103,7 +110,7 @@ class Blogs extends Component {
             {this.state.blogs.length ? (
               <List>
                 {this.state.blogs.map(blog => (
-                  <ListItem key={blog._id}>
+                  <ListItem key={blog._id} style={{ textAlign: "center" }}>
                     <Link to={"/blogs/" + blog._id}>
                       <strong>
                         {blog.topic} by {blog.author}

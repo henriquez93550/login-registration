@@ -25,6 +25,7 @@ import NoMatch from "./pages/NoMatch";
 import Html from "./pages/Html.jsx";
 import Css from "./pages/Css.jsx";
 import Bootstrap from "./pages/Bootstrap";
+import Js from "./pages/JS";
 
 import "./App.css";
 
@@ -54,19 +55,12 @@ class App extends Component {
         <Router>
           <div className="App">
             <Navbar />
-            {/* <Route exact path="/" component={Landing} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/home" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route exact path="/blogs/:id" component={Detail} /> */}
-
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route exact path="/html" component={Html} />
               <Route path="/css" component={Css} />
               <Route path="/bootstrap" component={Bootstrap} />
+              <Route path="/javascript" component={Js} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/home" component={Home} />

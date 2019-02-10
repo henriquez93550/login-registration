@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 // import Jumbotron from '../components/Jumbotron';
 import API from "../utils/API";
-import { TextArea, FormBtn } from "../components/Form";
+import { TextArea } from "../components/Form";
 import moment from "moment";
 // import DeleteBtn from "../components/DeleteBtn";
 // import { List, ListItem, } from "../components/List";
@@ -85,11 +85,11 @@ class Detail extends Component {
     const { topic, author, synopsis } = userdata;
 
     return (
-      <div style={{ height: "100%" }}>
+      <div>
         <Container fluid>
           <Row>
             <Col size="md-12">
-              <h1>
+              <h1 style={{ color: "whitesmoke" }}>
                 {topic} by {author} created at{" "}
                 <span className="text-success"> {this.state.time}</span>
               </h1>
@@ -99,19 +99,29 @@ class Detail extends Component {
           <Row>
             <Col size="md-10 md-offset-1">
               <article>
-                <h1>Synopsis</h1>
+                <h1 style={{ color: "whitesmoke" }}>Synopsis</h1>
                 <h3>{synopsis}</h3>
               </article>
             </Col>
           </Row>
-          <form>
+          <form className="form-wrapper">
             <TextArea
               value={this.state.responses}
               onChange={this.handleResponseChange}
               name="response"
               placeholder="Enter your response"
             />
-            <FormBtn onClick={this.Submitresponse}>Submit response</FormBtn>
+            <button
+              style={{
+                width: "180px",
+                borderRadius: "30px",
+                letterSpacing: "1.5px"
+              }}
+              onClick={this.Submitresponse}
+              className="btn btn-warning btn-block mb-2"
+            >
+              Submit response
+            </button>
           </form>
 
           <Row>
