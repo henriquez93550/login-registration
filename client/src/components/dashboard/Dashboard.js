@@ -13,15 +13,16 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     return (
-      <div style={{ height: "75vh" }} className="container">
+      <div style={{ height: "20vh" }} className="container">
         <div className="row">
           <div className="col-md-12">
             <h4>
               <b>Hi,</b> {user.name.split(" ")[0]}
-              <p className="mx-auto">
-                You are succesfully logged in to the{" "}
+              <span className="mx-auto">
+                {" "}
+                you are succesfully logged in to the{" "}
                 <span style={{ fontFamily: "monospace" }}>Forums</span>
-              </p>
+              </span>
             </h4>
             <button
               style={{

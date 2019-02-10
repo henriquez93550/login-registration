@@ -28,6 +28,9 @@ class Navbar extends Component {
           <Link className="navbar-brand text" to="/css">
             CSS
           </Link>
+          <Link className="navbar-brand text" to="/bootstrap">
+            Bootstrap
+          </Link>
           <Link className="navbar-brand text" to="/javascript">
             JAVASCRIPT
           </Link>
@@ -49,12 +52,12 @@ class Navbar extends Component {
                 </form> */}
 
               <li className="nav-item">
-                <Link className="nav-link" id="login-page" to="/login">
+                <Link className="nav-link" id="login-page" to="/">
                   Login
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" id="forum-page" to="/">
+                <Link className="nav-link" id="forum-page" to="/login">
                   Forum
                 </Link>
               </li>

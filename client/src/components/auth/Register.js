@@ -20,7 +20,7 @@ class Register extends Component {
   componentDidMount() {
     // If logged in and user navigates to Register page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/blogs");
     }
   }
 
@@ -55,19 +55,18 @@ class Register extends Component {
     return (
       <div className="wrapper">
         <div className="form-wrapper">
-        <div className="card-body">
+          <div className="card-body">
             <Link to="/">
-            <i className="fa fa-arrow-left"></i> Back to
-              home
+              <i className="fa fa-arrow-left" /> Back to home
             </Link>
-           
-              <h4>
-                <b>Register</b> below
-              </h4>
-              <p>
-                Already have an account? <Link to="/login">Log in</Link>
-              </p>
-            
+
+            <h4>
+              <b>Register</b> below
+            </h4>
+            <p>
+              Already have an account? <Link to="/login">Log in</Link>
+            </p>
+
             <form noValidate onSubmit={this.onSubmit}>
               <div className="name">
                 <input
@@ -125,17 +124,17 @@ class Register extends Component {
                 <label htmlFor="password2">Confirm Password</label>
                 <p className="text-warning">{errors.password2}</p>
               </div>
-                <button
-                  style={{
-                    width: "150px",
-                    borderRadius: "30px",
-                    letterSpacing: "1.5px",
-                  }}
-                  type="submit"
-                  className="btn btn-warning btn-block"
-                >
-                  Sign up
-                </button>
+              <button
+                style={{
+                  width: "150px",
+                  borderRadius: "30px",
+                  letterSpacing: "1.5px"
+                }}
+                type="submit"
+                className="btn btn-warning btn-block"
+              >
+                Sign up
+              </button>
             </form>
           </div>
         </div>

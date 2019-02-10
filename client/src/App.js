@@ -22,6 +22,10 @@ import Blogs from "./pages/Blogs";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 
+import Html from "./pages/Html.jsx";
+import Css from "./pages/Css.jsx";
+import Bootstrap from "./pages/Bootstrap";
+
 import "./App.css";
 
 // Check for token to keep user logged in
@@ -60,6 +64,9 @@ class App extends Component {
 
             <Switch>
               <Route exact path="/" component={Landing} />
+              <Route exact path="/html" component={Html} />
+              <Route path="/css" component={Css} />
+              <Route path="/bootstrap" component={Bootstrap} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/home" component={Home} />

@@ -18,13 +18,13 @@ class Login extends Component {
   componentDidMount() {
     // If logged in and user navigates to Login page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/blogs");
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/blogs");
     }
 
     if (nextProps.errors) {
@@ -54,20 +54,19 @@ class Login extends Component {
 
     return (
       <div className="wrapper">
-      <div className="form-wrapper">
+        <div className="form-wrapper">
           <div className="card-body">
             <Link to="/">
-              <i className="fa fa-arrow-left"></i> Back to
-              home
+              <i className="fa fa-arrow-left" /> Back to home
             </Link>
-            
-              <h4>
-                <b>Login</b> below
-              </h4>
-              <p>
-                Don't have an account? <Link to="/register">Register</Link>
-              </p>
-          
+
+            <h4>
+              <b>Login</b> below
+            </h4>
+            <p>
+              Don't have an account? <Link to="/register">Register</Link>
+            </p>
+
             <form noValidate onSubmit={this.onSubmit}>
               <div className="email">
                 <input
@@ -121,7 +120,6 @@ class Login extends Component {
           </div>
         </div>
       </div>
-      
     );
   }
 }
