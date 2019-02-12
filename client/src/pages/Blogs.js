@@ -110,9 +110,9 @@ class Blogs extends Component {
             {this.state.blogs.length ? (
               <List>
                 {this.state.blogs.map(blog => (
-                  <ListItem key={blog._id} style={{ textAlign: "center" }}>
+                  <ListItem key={blog._id}>
                     <Link to={"/blogs/" + blog._id}>
-                      <strong>
+                      <strong style={{ marginLeft: "1rem" }}>
                         {blog.topic} by {blog.author}
                       </strong>
                     </Link>
